@@ -1,13 +1,14 @@
 # Telegram Chat Cleaner and Group Leaver
 
-This script uses the [Telethon](https://github.com/LonamiWebs/Telethon) library to delete all chats, leave all groups, and unsubscribe from all channels in a Telegram account.
+This script uses the [Telethon](https://github.com/LonamiWebs/Telethon) library to interact with your Telegram account to delete all chats, leave all groups, unsubscribe from all channels, unblock all users, and delete all added contacts.
 
 ## Features
 
-- Deletes all messages in individual chats.
-- Leaves all groups.
-- Unsubscribes from all channels.
-- Handles archived chats as well.
+- Delete all messages in individual chats.
+- Leave all groups.
+- Unsubscribe from all channels.
+- Unblock all users.
+- Delete all added contacts.
 
 ## Prerequisites
 
@@ -36,16 +37,21 @@ This script uses the [Telethon](https://github.com/LonamiWebs/Telethon) library 
     python cleaner.py
     ```
 
+3. Choose the operations you want to perform from the interactive menu.
+
 ## Code Explanation
 
 The script performs the following steps:
 1. Initializes the Telegram client with the provided API ID, API hash, and session name.
 2. Starts the client and logs in using the provided phone number.
 3. Retrieves all dialogs (including archived ones).
-4. Iterates through each dialog:
-    - Deletes all messages in individual chats.
-    - Leaves groups and channels.
-5. Disconnects the client.
+4. Executes the selected operations by the user:
+    - Deletes all individual chats.
+    - Leaves groups.
+    - Unsubscribes from channels.
+    - Unblocks blocked users.
+    - Deletes all added contacts.
+5. Disconnects the client after completing the operations.
 
 ## Important Notes
 
@@ -54,7 +60,7 @@ The script performs the following steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the terms of the [MIT License](LICENSE).
 
 ## Contributing
 
@@ -63,4 +69,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## Acknowledgements
 
 - [Telethon](https://github.com/LonamiWebs/Telethon) for the Telegram client library.
-
