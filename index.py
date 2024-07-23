@@ -1,12 +1,12 @@
 from telethon.sync import TelegramClient
 from telethon.tl import functions, types
 
-api_id = '27410189'
-api_hash = '5cdf60b162cd9ea5e7dc98acd2cab810'
-phone_number = '+9647834498277'
+api_id = 'api_id'
+api_hash = 'api_hash'
+phone_number = 'phone_number'
 
 # Session name and client initialization
-session_name = 'alish'
+session_name = 'session_name'
 
 client = TelegramClient(session_name, api_id, api_hash)
 
